@@ -202,54 +202,54 @@ namespace uy
     template <typename T, typename A1>
     shared_ptr<T> make_shared(const A1& a1)
     {
-        return shared_ptr<T>(new T(a1));
+        return shared_ptr<T>(new T(const_cast<A1&>(a1)));
     }
 
     template <typename T, typename A1, typename A2>
     shared_ptr<T> make_shared(const A1& a1, const A2& a2)
     {
-        return shared_ptr<T>(new T(a1, a2));
+        return shared_ptr<T>(new T(const_cast<A1&>(a1), const_cast<A2&>(a2)));
     }
 
     template <typename T, typename A1, typename A2, typename A3>
     shared_ptr<T> make_shared(const A1& a1, const A2& a2, const A3& a3)
     {
-        return shared_ptr<T>(new T(a1, a2, a3));
+        return shared_ptr<T>(new T(const_cast<A1&>(a1), const_cast<A2&>(a2), const_cast<A3&>(a3)));
     }
 
     template <typename T, typename A1, typename A2, typename A3, typename A4>
     shared_ptr<T> make_shared(const A1& a1, const A2& a2, const A3& a3, const A4& a4)
     {
-        return shared_ptr<T>(new T(a1, a2, a3, a4));
+        return shared_ptr<T>(new T(const_cast<A1&>(a1), const_cast<A2&>(a2), const_cast<A3&>(a3), const_cast<A4&>(a4)));
     }
 
     template <typename T, typename A1, typename A2, typename A3, typename A4, typename A5>
     shared_ptr<T> make_shared(const A1& a1, const A2& a2, const A3& a3, const A4& a4, const A5& a5)
     {
-        return shared_ptr<T>(new T(a1, a2, a3, a4, a5));
+        return shared_ptr<T>(new T(const_cast<A1&>(a1), const_cast<A2&>(a2), const_cast<A3&>(a3), const_cast<A4&>(a4), const_cast<A5&>(a5)));
     }
 
     template <typename T, typename A1, typename A2, typename A3, typename A4, typename A5, typename A6>
     shared_ptr<T> make_shared(const A1& a1, const A2& a2, const A3& a3, const A4& a4, const A5& a5, const A6& a6)
     {
-        return shared_ptr<T>(new T(a1, a2, a3, a4, a5, a6));
+        return shared_ptr<T>(new T(const_cast<A1&>(a1), const_cast<A2&>(a2), const_cast<A3&>(a3), const_cast<A4&>(a4), const_cast<A5&>(a5), const_cast<A6&>(a6)));
     }
 
     template <typename T, typename A1, typename A2, typename A3, typename A4, typename A5, typename A6, typename A7>
     shared_ptr<T> make_shared(const A1& a1, const A2& a2, const A3& a3, const A4& a4, const A5& a5, const A6& a6, const A7& a7)
     {
-        return shared_ptr<T>(new T(a1, a2, a3, a4, a5, a6, a7));
+        return shared_ptr<T>(new T(const_cast<A1&>(a1), const_cast<A2&>(a2), const_cast<A3&>(a3), const_cast<A4&>(a4), const_cast<A5&>(a5), const_cast<A6&>(a6), const_cast<A7&>(a7)));
     }
 
     template <typename T, typename A1, typename A2, typename A3, typename A4, typename A5, typename A6, typename A7, typename A8>
     shared_ptr<T> make_shared(const A1& a1, const A2& a2, const A3& a3, const A4& a4, const A5& a5, const A6& a6, const A7& a7, const A8& a8)
     {
-        return shared_ptr<T>(new T(a1, a2, a3, a4, a5, a6, a7, a8));
+        return shared_ptr<T>(new T(const_cast<A1&>(a1), const_cast<A2&>(a2), const_cast<A3&>(a3), const_cast<A4&>(a4), const_cast<A5&>(a5), const_cast<A6&>(a6), const_cast<A7&>(a7), const_cast<A8&>(a8)));
     }
 
     template <typename T, typename A1, typename A2, typename A3, typename A4, typename A5, typename A6, typename A7, typename A8, typename A9>
     shared_ptr<T> make_shared(const A1& a1, const A2& a2, const A3& a3, const A4& a4, const A5& a5, const A6& a6, const A7& a7, const A8& a8, const A9& a9)
     {
-        return shared_ptr<T>(new T(a1, a2, a3, a4, a5, a6, a7, a8, a9));
+        return shared_ptr<T>(new T(const_cast<A1&>(a1), const_cast<A2&>(a2), const_cast<A3&>(a3), const_cast<A4&>(a4), const_cast<A5&>(a5), const_cast<A6&>(a6), const_cast<A7&>(a7), const_cast<A8&>(a8), const_cast<A9&>(a9)));
     }
 }
